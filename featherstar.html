@@ -714,7 +714,7 @@
           <div class="photo-card-image-wrapper">
             <div class="image-placeholder" data-placeholder></div>
             <img 
-              src="featherstar/${photo.filename}" 
+              src="featherstar-web/${photo.filename}" 
               alt="${photo.title}"
               onload="this.classList.add('loaded'); this.parentElement.querySelector('[data-placeholder]').classList.add('hidden');"
               onerror="this.style.opacity='0.3'; this.parentElement.querySelector('[data-placeholder]').innerHTML='<div style=\'color: rgba(255,255,255,0.3);\'>Image unavailable</div>';"
@@ -844,7 +844,7 @@
           <div class="photo-card-image-wrapper">
             <div class="image-placeholder" data-placeholder></div>
             <img 
-              src="featherstar/${photo.filename}" 
+              src="featherstar-web/${photo.filename}" 
               alt="${photo.title}"
               onload="this.classList.add('loaded'); this.parentElement.querySelector('[data-placeholder]').classList.add('hidden');"
               onerror="this.style.opacity='0.3'; this.parentElement.querySelector('[data-placeholder]').innerHTML='<div style=\'color: rgba(255,255,255,0.3);\'>Image unavailable</div>';"
@@ -962,7 +962,7 @@
       currentModalIndex = photoIndex;
       const photo = photos[photoIndex];
       
-      modalImage.src = `featherstar/${photo.filename}`;
+      modalImage.src = `featherstar-web/${photo.filename}`;
       modalImage.alt = photo.title;
       
       modalInfo.innerHTML = `
